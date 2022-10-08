@@ -5,9 +5,15 @@ const getMissingPersons = async (req, res) => {
     res.status(StatusCodes.OK).json({ missingPersons });
 };
 const postMissingPerson = async (req, res) => {
-    const missingPerson = await MissingPerson.create(req.body);
-    res.status(StatusCodes.CREATED).json({ missingPerson });
+    try {
+        const missingPerson = await MissingPerson.create(req.body);
+        res.status(StatusCodes.CREATED).json({ missingPerson });
+    }
+    catch (err) {
+        res.status(409).json({ message: err.message })
+    }
 };
+
 const deleteMissingPerson = async (req, res) => {
     const { id } = req.params;
     const missingPerson = await MissingPerson.findByIdAndDelete(id);
