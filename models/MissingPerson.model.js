@@ -20,7 +20,7 @@ let MissingPerson = new Schema({
         type: String
     },
     MissingPerson_type: {
-        type: Option
+        type: String
     }
 });
 module.exports = mongoose.model('MissingPerson', MissingPerson);
