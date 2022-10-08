@@ -2,7 +2,7 @@ const expres = require('express');
 const router = expres.Router();
 
 
-const { getMissingPersons, postMissingPerson, updateMissingPerson, getMissingPerson, deleteMissingPerson } = require('../models/MissingPerson.model');
+const { getMissingPersons, postMissingPerson, updateMissingPerson, getMissingPerson, deleteMissingPerson } = require('../controllers/MissingPerson.controller');
 
 router.get('/', getMissingPersons);
 router.post('/', postMissingPerson);

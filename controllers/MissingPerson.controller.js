@@ -16,7 +16,7 @@ const deleteMissingPerson = async (req, res) => {
 };
 
 const getMissingPerson = async (req, res) => {
-    const missingPerson = await MissingPerson.findById(req.params.id).select('-password');
+    const missingPerson = await MissingPerson.findById(req.params.id).select('finger');
     res.status(StatusCodes.OK).json({ missingPerson });
 };
 const updateMissingPerson = async (req, res) => {

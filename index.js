@@ -1,6 +1,6 @@
 const expres = require("express");
 const cors = require("cors");
-const studentDB = require("./Database/criminalProfiling");
+const criminalProfiling = require("./Database/criminalProfiling");
 
 const app = expres();
 const port = process.env.PORT || 5000;

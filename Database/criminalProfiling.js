@@ -10,5 +10,5 @@ module.exports = function criminalProfiling() {
         .then(() => console.log("MongoDB connected"))
         .catch((err) => console.log(err));
 
-    mongoose.set("useFindAndModify", false);
+    // mongoose.set("useFindAndModify", false);
 }
