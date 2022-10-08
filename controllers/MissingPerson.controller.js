@@ -1,7 +1,7 @@
-const Profiles = require('../models/MissingPerson.model');
+const MissingPerson = require('../models/MissingPerson.model');
 
 const getMissingPersons = async (req, res) => {
-    const missingPersons = await MissingPerson.find({}).select('-password');
+    const missingPersons = await MissingPerson.find({}).select('finger');
     res.status(StatusCodes.OK).json({ missingPersons });
 };
 const postMissingPerson = async (req, res) => {
@@ -15,8 +15,8 @@ const postMissingPerson = async (req, res) => {
 };
 
 const deleteMissingPerson = async (req, res) => {
-    const { id } = req.params;
-    const missingPerson = await MissingPerson.findByIdAndDelete(id);
+    const { finger } = req.params;
+    const missingPerson = await MissingPerson.findByIdAndDelete(finger);
     res.status(StatusCodes.OK).json({ missingPerson });
 };
 
