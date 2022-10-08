@@ -5,13 +5,8 @@ const getMissingPersons = async (req, res) => {
     res.status(StatusCodes.OK).json({ missingPersons });
 };
 const postMissingPerson = async (req, res) => {
-    try {
-        const missingPerson = await MissingPerson.create(req.body);
-        res.status(StatusCodes.CREATED).json({ missingPerson });
-    }
-    catch (err) {
-        res.status(409).json({ message: err.message })
-    }
+    const missingPerson = await MissingPerson.create(req.body);
+    res.status(StatusCodes.CREATED).json({ missingPerson });
 };
 
 const deleteMissingPerson = async (req, res) => {
