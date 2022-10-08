@@ -1,20 +1,27 @@
 {
-  "name": "backend",
-  "version": "0.0.0",
-  "private": true,
+  "name": "server",
+  "version": "1.0.0",
+  "description": "��#\u0000S\u0000e\u0000r\u0000v\u0000e\u0000r\u0000",
+  "main": "index.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Darshit4511/Server.git"
+  },
+  "author": "Darshit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Darshit4511/Server/issues"
+  },
+  "homepage": "https://github.com/Darshit4511/Server#readme",
   "dependencies": {
     "body-parser": "^1.20.1",
-    "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
-    "debug": "~2.6.9",
-    "dotenv": "^10.0.0",
-    "express": "~4.16.1",
-    "http-errors": "~1.6.3",
-    "jade": "~1.11.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
     "mongoose": "^6.6.5",
-    "morgan": "~1.9.1"
+    "nodemon": "^2.0.20"
   }
 }
