@@ -4,9 +4,9 @@ const router = expres.Router();
 
 const { getMissingPersons, postMissingPerson, updateMissingPerson, getMissingPerson, deleteMissingPerson } = require('../controllers/MissingPerson.controller');
 
-router.get('/', getMissingPersons);
-router.post('/', postMissingPerson);
-router.get('/:id', updateMissingPerson);
-router.get('/:id', deleteMissingPerson);
-router.get('/:id', getMissingPerson);
+router.get('/missingPerson', getMissingPersons);
+router.post('/missingPerson', postMissingPerson);
+router.get('/missingPerson/:id', updateMissingPerson);
+router.get('/missingPerson/:id', deleteMissingPerson);
+router.get('/missingPerson/:id', getMissingPerson);
 module.exports = router;
