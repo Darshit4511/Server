@@ -1,5 +1,5 @@
-const express = express = require('express');
-const router = express.Router();
+const expres = require('express');
+const router = expres.Router();
 
 
 const { getMissingPersons, postMissingPerson, updateMissingPerson, getMissingPerson, deleteMissingPerson } = require('../models/MissingPerson.model');
