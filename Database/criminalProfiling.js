@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 module.exports = function criminalProfiling() {
     // Connect to MongoDB locally
-    mongoose.connect("mongodb+srv://Darshit:Darshit@4511@cluster0.pjmpacz.mongodb.net/?retryWrites=true&w=majority", {
+    mongoose.connect("mongodb+srv://Darshit:Darshit%404511@cluster0.pjmpacz.mongodb.net/?retryWrites=true&w=majority", {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })

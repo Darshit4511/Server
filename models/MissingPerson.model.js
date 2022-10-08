@@ -5,7 +5,7 @@ let MissingPerson = new Schema({
         type: String
     },
     MissingPerson_dob: {
-        type: Date
+        type: String
     },
     MissingPerson_adhar: {
         type: String
