@@ -1,4 +1,4 @@
-# Backend for Criminal Profiling Tool - SSIP Azadi ka Amrut Mahotsav Hackthon 2022
+# Backend (Incomplete) for Criminal Profiling Tool - SSIP Azadi ka Amrut Mahotsav Hackthon 2022
 
 ## Backend
 Backend is created with NodeJS, ExpressJS and hosted on Heroku.\
